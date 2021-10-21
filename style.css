@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #ff6b35;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.display{
+    background-color: var(--primary);
+    height: 200px;
+    width: auto;
+    border-radius: 30px 30px 0 0;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+}
+
+#display-content{
+    font-size: 50px;
+
+}
+
+#display2{
+    font-size: 30px;
+}
+
+.display-none{
+    display: none;
+}
+
+.display span{
+    font-size: 40px;
+}
+
+.display .d1 span{
+    font-size: 30px;
+}
+
+.calculadora{
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 0 0 30px 30px;
+    gap: 15px;
+    width: auto;
+}
+
+.calculadora button{
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: white;
+}
+
+.operador{
+    color: var(--primary);
+}
+
+.calculadora .bold{
+    font-weight: bold;
+}
+
+.fas{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+@media(max-width: 450px){
+    
+    .display{
+        background-color: var(--primary);
+        height: 45vh;
+        width: auto;
+        border-radius: 0px;
+        padding: 40px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+        color: white;
+    }
+    
+    .calculadora{
+        padding: 20px 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        box-shadow: none;
+        gap: 10px;
+        border-radius: 0px;
+        width: auto;
+    }
+}
